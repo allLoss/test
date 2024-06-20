@@ -1,0 +1,707 @@
+#!MANAGED-CONFIG https://delta.winnie.cloud/link/0SHdzdsf1msZOUat?clash=1
+
+#---------------------------------------------------#
+## 上次更新于：2024-06-18 08:49:21
+#---------------------------------------------------#
+
+port: 7890
+socks-port: 7891
+redir-port: 7892
+allow-lan: false
+mode: Rule
+log-level: silent
+external-controller: '0.0.0.0:9090'
+secret: ''
+dns:
+  enable: true
+  listen: '0.0.0.0:53'
+  enhanced-mode: fake-ip
+  fake-ip-range: 198.18.0.1/16
+  nameserver:
+    - 223.5.5.5
+    - 119.29.29.29
+    - 'tcp://1.1.1.1'
+    - 'https://1.1.1.1/dns-query'
+    - 1.1.1.1
+  fallback:
+    - 'tls://dns.rubyfish.cn:853'
+    - 'tls://dns.google'
+    - 1.0.0.1
+    - 8.8.8.8
+proxies:
+  -
+    name: 'V0 JPN-000T | 0.05x比率 | 红了就更新订阅'
+    type: trojan
+    server: 13.231.120.219
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V0 KOR-000T | 0.05x比率 | 红了就更新订阅'
+    type: trojan
+    server: 3.38.204.171
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V0 KOR-001T | 0.05x比率 | 红了就更新订阅'
+    type: trojan
+    server: 13.125.197.33
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V0 SGP-000T | 0.05x比率 | 红了就更新订阅'
+    type: trojan
+    server: 13.212.189.4
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V1 JPN-100T | 0.01x比率 | 红了就更新订阅'
+    type: trojan
+    server: 54.248.14.57
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V1 JPN-101T | 0.01x比率 | 红了就更新订阅'
+    type: trojan
+    server: 35.74.68.3
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V1 KOR-100T | 0.1x比率 | 红了就更新订阅'
+    type: trojan
+    server: 43.203.191.4
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V1 SGP-100T 对比实验 | 0.01x比率'
+    type: trojan
+    server: 18.142.158.17
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 HKG-220T 移动中转 | 香港 | BGP | 极速'
+    type: trojan
+    server: 183.232.249.192
+    port: 6242
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 HKG-221T 移动中转 | 香港 | BGP | 极速'
+    type: trojan
+    server: 183.232.249.192
+    port: 13159
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 JPN-200 | 日本 | 高速'
+    type: trojan
+    server: 35.79.226.224
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 JPN-201T | 日本 | 高速'
+    type: trojan
+    server: 18.177.149.174
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 USA-200 | 美国'
+    type: trojan
+    server: 34.220.155.30
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 USA-201 | 美国'
+    type: trojan
+    server: 34.211.28.133
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V2 USA-280T | 美国'
+    type: trojan
+    server: 5.78.91.130
+    port: 571
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 ARG-300T 移动中转 | 阿根廷'
+    type: trojan
+    server: 112.3.30.178
+    port: 8764
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 DEU-300T 移动中转 | 德国 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 37541
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 DEU-301T 移动中转 | 德国 | 高速'
+    type: trojan
+    server: 112.3.30.178
+    port: 5412
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-300T 移动中转 | 香港 | 急速 1GE'
+    type: trojan
+    server: 112.3.30.178
+    port: 9842
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-310T 移动中转 | 香港 | BGP'
+    type: trojan
+    server: 112.3.30.178
+    port: 1202
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-311T 移动中转 | 香港 | BGP'
+    type: trojan
+    server: 112.3.30.178
+    port: 1203
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-312T 移动中转 | 香港 | BGP'
+    type: trojan
+    server: 112.3.30.178
+    port: 1204
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-350T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 27313
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 HKG-351T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 112.3.30.178
+    port: 2012
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 JPN-300T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+    type: trojan
+    server: 112.3.30.178
+    port: 52000
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 JPN-301T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+    type: trojan
+    server: 183.232.249.192
+    port: 52001
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 JPN-310T | 日本'
+    type: trojan
+    server: 54.248.36.132
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 JPN-311T | 高速 | 日本'
+    type: trojan
+    server: 18.182.30.225
+    port: 443
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 JPN-330T 移动中转 | 日本 | 高速 | 1GE'
+    type: trojan
+    server: 36.139.232.244
+    port: 55650
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 KOR-300T 移动中转 | 韩国 | 高速低延迟'
+    type: trojan
+    server: 36.139.232.244
+    port: 2001
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 KOR-301T 移动中转 | 韩国 | 高速低延迟'
+    type: trojan
+    server: 36.139.232.244
+    port: 3000
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 KOR-320T 移动中转 | 韩国 | 高速低延迟'
+    type: trojan
+    server: 36.139.232.244
+    port: 4125
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 SGP-320T 移动中转 | 高速'
+    type: trojan
+    server: 112.3.30.178
+    port: 7531
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 SGP-321T 移动中转 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 7532
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 TWN-300T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 54482
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V3 TWN-301T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 54483
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V4 JPN-400 移动中转 | 高速 | 日本 | 本地 IP'
+    type: trojan
+    server: 36.139.232.244
+    port: 8001
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V4 JPN-401 移动中转 | 高速 | 日本 | 本地 IP'
+    type: trojan
+    server: 36.139.232.244
+    port: 8002
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V4 SGP-400 BGP 聚合中转 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 3504
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V4 SGP-401 BGP 聚合中转 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 112.3.30.178
+    port: 45412
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V4 USA-400 移动中转 | 美国'
+    type: trojan
+    server: 183.232.249.192
+    port: 9400
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V5 HKG-500T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 19703
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V5 HKG-501T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+    type: trojan
+    server: 183.232.249.192
+    port: 27314
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V5 JPN-500T 移动 BGP 聚合中转 | 日本 | 确认啥都解锁 | 极速 2GE'
+    type: trojan
+    server: 112.3.30.178
+    port: 52050
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V5 JPN-510 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+    type: trojan
+    server: 36.139.232.244
+    port: 8003
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+  -
+    name: 'V5 JPN-511 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+    type: trojan
+    server: 36.139.232.244
+    port: 8004
+    password: 9c74c8bf-08ba-3daf-8542-4943c613dd0a
+    sni: AAAAAAAAAAAAAAAAAAA.BILIVIDEO.COM
+    skip-cert-verify: true
+    udp: true
+proxy-groups:
+  -
+    name: 🔰国外流量
+    type: select
+    proxies:
+      - ✈️自动测速
+      - 'V0 JPN-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-001T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 SGP-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V1 JPN-100T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 JPN-101T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 KOR-100T | 0.1x比率 | 红了就更新订阅'
+      - 'V1 SGP-100T 对比实验 | 0.01x比率'
+      - 'V2 HKG-220T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 HKG-221T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 JPN-200 | 日本 | 高速'
+      - 'V2 JPN-201T | 日本 | 高速'
+      - 'V2 USA-200 | 美国'
+      - 'V2 USA-201 | 美国'
+      - 'V2 USA-280T | 美国'
+      - 'V3 ARG-300T 移动中转 | 阿根廷'
+      - 'V3 DEU-300T 移动中转 | 德国 | 高速'
+      - 'V3 DEU-301T 移动中转 | 德国 | 高速'
+      - 'V3 HKG-300T 移动中转 | 香港 | 急速 1GE'
+      - 'V3 HKG-310T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-311T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-312T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-350T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 HKG-351T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 JPN-300T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-301T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-310T | 日本'
+      - 'V3 JPN-311T | 高速 | 日本'
+      - 'V3 JPN-330T 移动中转 | 日本 | 高速 | 1GE'
+      - 'V3 KOR-300T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-301T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-320T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 SGP-320T 移动中转 | 高速'
+      - 'V3 SGP-321T 移动中转 | 高速'
+      - 'V3 TWN-300T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V3 TWN-301T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V4 JPN-400 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 JPN-401 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 SGP-400 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 SGP-401 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 USA-400 移动中转 | 美国'
+      - 'V5 HKG-500T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 HKG-501T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 JPN-500T 移动 BGP 聚合中转 | 日本 | 确认啥都解锁 | 极速 2GE'
+      - 'V5 JPN-510 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+      - 'V5 JPN-511 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+      - 🚀直接连接
+  -
+    name: ✈️自动测速
+    type: url-test
+    proxies:
+      - 'V0 JPN-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-001T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 SGP-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V1 JPN-100T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 JPN-101T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 KOR-100T | 0.1x比率 | 红了就更新订阅'
+      - 'V1 SGP-100T 对比实验 | 0.01x比率'
+      - 'V2 HKG-220T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 HKG-221T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 JPN-200 | 日本 | 高速'
+      - 'V2 JPN-201T | 日本 | 高速'
+      - 'V2 USA-200 | 美国'
+      - 'V2 USA-201 | 美国'
+      - 'V2 USA-280T | 美国'
+      - 'V3 ARG-300T 移动中转 | 阿根廷'
+      - 'V3 DEU-300T 移动中转 | 德国 | 高速'
+      - 'V3 DEU-301T 移动中转 | 德国 | 高速'
+      - 'V3 HKG-300T 移动中转 | 香港 | 急速 1GE'
+      - 'V3 HKG-310T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-311T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-312T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-350T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 HKG-351T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 JPN-300T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-301T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-310T | 日本'
+      - 'V3 JPN-311T | 高速 | 日本'
+      - 'V3 JPN-330T 移动中转 | 日本 | 高速 | 1GE'
+      - 'V3 KOR-300T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-301T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-320T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 SGP-320T 移动中转 | 高速'
+      - 'V3 SGP-321T 移动中转 | 高速'
+      - 'V3 TWN-300T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V3 TWN-301T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V4 JPN-400 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 JPN-401 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 SGP-400 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 SGP-401 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 USA-400 移动中转 | 美国'
+      - 'V5 HKG-500T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 HKG-501T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 JPN-500T 移动 BGP 聚合中转 | 日本 | 确认啥都解锁 | 极速 2GE'
+      - 'V5 JPN-510 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+      - 'V5 JPN-511 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+    url: 'https://cp.cloudflare.com/generate_204'
+    interval: 300
+  -
+    name: ⚓️其他流量
+    type: select
+    proxies:
+      - 🔰国外流量
+      - ✈️自动测速
+      - 🚀直接连接
+  -
+    name: 🎬国外媒体
+    type: select
+    proxies:
+      - 🔰国外流量
+      - ✈️自动测速
+      - 'V0 JPN-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 KOR-001T | 0.05x比率 | 红了就更新订阅'
+      - 'V0 SGP-000T | 0.05x比率 | 红了就更新订阅'
+      - 'V1 JPN-100T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 JPN-101T | 0.01x比率 | 红了就更新订阅'
+      - 'V1 KOR-100T | 0.1x比率 | 红了就更新订阅'
+      - 'V1 SGP-100T 对比实验 | 0.01x比率'
+      - 'V2 HKG-220T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 HKG-221T 移动中转 | 香港 | BGP | 极速'
+      - 'V2 JPN-200 | 日本 | 高速'
+      - 'V2 JPN-201T | 日本 | 高速'
+      - 'V2 USA-200 | 美国'
+      - 'V2 USA-201 | 美国'
+      - 'V2 USA-280T | 美国'
+      - 'V3 ARG-300T 移动中转 | 阿根廷'
+      - 'V3 DEU-300T 移动中转 | 德国 | 高速'
+      - 'V3 DEU-301T 移动中转 | 德国 | 高速'
+      - 'V3 HKG-300T 移动中转 | 香港 | 急速 1GE'
+      - 'V3 HKG-310T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-311T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-312T 移动中转 | 香港 | BGP'
+      - 'V3 HKG-350T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 HKG-351T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V3 JPN-300T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-301T 移动 BGP 聚合中转 | 2x比率 | 日本 | 确认啥都解锁 | 极速 1GE'
+      - 'V3 JPN-310T | 日本'
+      - 'V3 JPN-311T | 高速 | 日本'
+      - 'V3 JPN-330T 移动中转 | 日本 | 高速 | 1GE'
+      - 'V3 KOR-300T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-301T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 KOR-320T 移动中转 | 韩国 | 高速低延迟'
+      - 'V3 SGP-320T 移动中转 | 高速'
+      - 'V3 SGP-321T 移动中转 | 高速'
+      - 'V3 TWN-300T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V3 TWN-301T 移动 BGP 聚合中转 | 迫真台湾 | 确认啥都解锁 | 高速'
+      - 'V4 JPN-400 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 JPN-401 移动中转 | 高速 | 日本 | 本地 IP'
+      - 'V4 SGP-400 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 SGP-401 BGP 聚合中转 | 确认啥都解锁 | 高速'
+      - 'V4 USA-400 移动中转 | 美国'
+      - 'V5 HKG-500T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 HKG-501T 移动 BGP 聚合中转 | 香港 | 确认啥都解锁 | 高速'
+      - 'V5 JPN-500T 移动 BGP 聚合中转 | 日本 | 确认啥都解锁 | 极速 2GE'
+      - 'V5 JPN-510 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+      - 'V5 JPN-511 移动中转 | 日本 | 高速 | 1GE | 本地 IP'
+  -
+    name: 🍎苹果服务
+    type: select
+    proxies:
+      - 🚀直接连接
+      - ✈️自动测速
+      - 🔰国外流量
+  -
+    name: 🚀直接连接
+    type: select
+    proxies:
+      - DIRECT
+  -
+    name: 广告过滤
+    type: select
+    proxies:
+      - REJECT
+      - 🚀直接连接
+      - ✈️自动测速
+      - 🔰国外流量
+rule-providers:
+  reject:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/reject.txt'
+    path: ./ruleset/reject.yaml
+    interval: 86400
+  proxy:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/proxy.txt'
+    path: ./ruleset/proxy.yaml
+    interval: 86400
+  direct:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/direct.txt'
+    path: ./ruleset/direct.yaml
+    interval: 86400
+  google:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/google.txt'
+    path: ./ruleset/google.yaml
+    interval: 86400
+  apple:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/apple.txt'
+    path: ./ruleset/apple.yaml
+    interval: 86400
+  icloud:
+    type: http
+    behavior: domain
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/icloud.txt'
+    path: ./ruleset/icloud.yaml
+    interval: 86400
+  cncidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/cncidr.txt'
+    path: ./ruleset/cncidr.yaml
+    interval: 86400
+  lancidr:
+    type: http
+    behavior: ipcidr
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/lancidr.txt'
+    path: ./ruleset/lancidr.yaml
+    interval: 86400
+  telegram:
+    type: http
+    behavior: ipcidr
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/telegramcidr.txt'
+    path: ./ruleset/telegram.yaml
+    interval: 86400
+  applications:
+    type: http
+    behavior: classical
+    url: 'https://feichanghaotlszuduanshiwodeyumingxuanzhuan.esucloud.com/.well-known/clash-rules/applications.txt'
+    path: ./ruleset/applications.yaml
+    interval: 86400
+
+
+rules:
+  - RULE-SET,reject,广告过滤
+  - DOMAIN-SUFFIX,googleapis.cn,🔰国外流量
+  - RULE-SET,google,🔰国外流量
+  - RULE-SET,proxy,🔰国外流量
+  - RULE-SET,telegram,🔰国外流量
+  - RULE-SET,apple,🍎苹果服务
+  - RULE-SET,icloud,🍎苹果服务
+  - RULE-SET,direct,🚀直接连接
+  - RULE-SET,cncidr,🚀直接连接
+  - RULE-SET,applications,🚀直接连接
+  - RULE-SET,lancidr,🚀直接连接
+  - GEOIP,LAN,🚀直接连接
+  - GEOIP,CN,🚀直接连接
+  - MATCH,⚓️其他流量
